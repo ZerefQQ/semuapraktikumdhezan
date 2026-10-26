@@ -1,0 +1,225 @@
+/* styleku.css - praktikum 4 (css eksternal untuk burung.html) */
+
+body {
+    background-color: #9ece82;
+    font-family: Garamond, "Times New Roman", serif;
+    margin: 0;
+    padding: 500px;
+}
+
+/* header */
+#header {
+    background-color: burlywood;
+    text-align: center;
+    padding: 10px 15px 15px 15px;
+    border-radius: 8px;
+}
+#header h1 {
+    color: blue;
+    font-size: 26px;
+}
+blockquote {
+    background-color: gold;
+    border: 1px dotted black;
+    margin: 0 auto;
+    padding: 6px 10px;
+    font-size: 13px;
+    text-align: center;
+}
+#soekarno {
+    font-weight: bold;
+}
+
+/* menu */
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+#menu li {
+    display: inline;
+    margin: 0 10px;
+}
+#menu a {
+    color: navy;
+    font-weight: bold;
+    text-decoration: none;
+}
+#menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* gambar atas */
+.gambar {
+    text-align: center;
+}
+.gambar img {
+    width: 300px;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    margin: 5px;
+}
+
+/* isi */
+.isi {
+    width: 90%;
+    margin: 15px auto;
+}
+.isi p {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 15px;
+}
+.huruf-besar {
+    display: inline-block;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.6em;
+    font-weight: bold;
+    line-height: 0.75;
+    color: #24552b;
+    vertical-align: -0.12em;
+    margin-right: 2px;
+}
+.jawa {
+    font-weight: bold;
+    color: green;
+}
+
+/* profil dan cara berternak */
+#profil, #beternak {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: rgb(152, 186, 43);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+#profil h3, #beternak h3 {
+    color: darkgreen;
+    border-bottom: 2px solid burlywood;
+    padding-bottom: 5px;
+}
+#beternak h4 {
+    margin-bottom: 3px;
+}
+#beternak p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+/* koleksi foto */
+.koleksi {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 24px auto;
+    padding: 16px;
+    background-color: #eef1df;
+    border-radius: 10px;
+}
+.koleksi img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    padding: 8px;
+    background-color: #bfcd53;
+    border: 1px solid #d9ddc9;
+    border-radius: 7px;
+    box-shadow: 0 3px 8px rgba(50, 60, 35, 0.12);
+    margin: 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.koleksi img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(50, 60, 35, 0.18);
+}
+
+/* promo */
+.promo {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgb(233, 250, 0);
+    text-align: center;
+    border-radius: 8px;
+}
+.promo h2 {
+    color: red;
+}
+.promo del {
+    color: gray;
+}
+.promo strong {
+    color: red;
+    font-size: 22px;
+}
+#Wa {
+    color: green;
+    font-weight: bold;
+}
+
+#WA {
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    background-color: #25d366;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#WA:hover {
+    background-color: #128c7e;
+}
+
+#Instagram {
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    background-color: #e1306c;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#Instagram:hover {
+    background-color: #c2185b;
+}
+.promo ol {
+    list-style-type: none;
+    padding: 0;
+}
+.promo li {
+    display: inline;
+    margin: 5px;
+}
+.promo li a {
+    background-color: #333333;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.promo li a:hover {
+    background-color: red;
+}
+
+/* tampilan hp */
+@media (max-width: 600px) {
+    .gambar img {
+        width: 40%;
+    }
+    .koleksi {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
+    .koleksi img {
+        height: 130px;
+    }
+}
