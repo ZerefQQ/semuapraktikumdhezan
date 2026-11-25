@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Mobil Supercar</title>
+</head>
+<body>
+    <h1>Form Pemesanan Mobil Supercar</h1>
+    <p>Lengkapi detail dan data pembayaran, lalu klik tombol Pesan pada mobil yang ingin kamu beli.</p>
+
+    <form method="get">
+
+        <fieldset>
+            <legend><b>Detail Mobil</b></legend>
+            <table>
+                <tr>
+                    <td align="right" valign="top">Warna :</td>
+                    <td valign="top">
+                        <input type="radio" id="merah" name="warna" value="Merah" checked>
+                        <label for="merah">Merah</label>
+                        <input type="radio" id="kuning" name="warna" value="Kuning">
+                        <label for="kuning">Kuning</label>
+                        <input type="radio" id="hitam" name="warna" value="Hitam">
+                        <label for="hitam">Hitam</label>
+                        <input type="radio" id="putih" name="warna" value="Putih">
+                        <label for="putih">Putih</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><label for="deskripsi">Deskripsi :</label></td>
+                    <td valign="top">
+                       
+                        <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" maxlength="300" placeholder="*tambahan jika ada yang mau diucapkan lagi"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Data Pembayaran</b></legend>
+            <table>
+                <tr>
+                    <td align="right"><label for="no_rekening">Nomor Rekening :</label></td>
+                    <td>
+                        <input type="text" id="no_rekening" name="no_rekening" size="30" placeholder="Contoh: 123-456-789-0" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="bank">Bank :</label></td>
+                    <td>
+                        <select id="bank" name="bank" required>
+                            <option value="">-- Pilih Bank --</option>
+                            <option value="BCA">BCA</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BNI">BNI</option>
+                            <option value="BRI">BRI</option>
+                            <option value="CIMB Niaga">CIMB Niaga</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="pemilik">Nama Pemilik Rekening :</label></td>
+                    <td>
+                        <input type="text" id="pemilik" name="pemilik" size="30" placeholder="Nama sesuai rekening" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="jumlah">Jumlah Unit :</label></td>
+                    <td>
+                        <select id="jumlah" name="jumlah">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <br>
+                        <small>* Maksimal 3 unit per transaksi, pilih dari drop-down list.</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Kirim Bukti Ke :</td>
+                    <td>
+                        <input type="checkbox" id="kirim_hp" name="kirim_hp" value="ya" checked>
+                        <label for="kirim_hp">Nomor HP</label>
+                        <br>
+                        <input type="checkbox" id="kirim_email" name="kirim_email" value="ya" checked>
+                        <label for="kirim_email">Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="no_hp">Nomor HP :</label></td>
+                    <td>
+                        <input type="tel" id="no_hp" name="no_hp" size="40" placeholder="Contoh: 081234567890, 081234567891">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="email">Email :</label></td>
+                    <td>
+                        <input type="email" id="email" name="email" size="40" multiple placeholder="Contoh: nama@example.com, nama2@example.com">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Pilih Mobil &amp; Pesan</b></legend>
+            <p><small>* Gambar di bawah hanya contoh gambar mobil.</small></p>
+            <table cellpadding="8">
+                <tr>
+                    <td align="center" valign="top">
+                        <img src="assets/lamborghini.jpg" alt="Lamborghini Huracán EVO" width="200">
+                        <br>
+                        Lamborghini Huracán EVO
+                        <br>
+                        <input type="submit" value="Pesan Lamborghini" formaction="prak2_kelompok_4_hasil_lamborghini.html">
+                    </td>
+                    <td align="center" valign="top">
+                        <img src="assets/ferrari.jpg" alt="Ferrari F8 Tributo" width="200">
+                        <br>
+                        Ferrari F8 Tributo
+                        <br>
+                        <input type="submit" value="Pesan Ferrari" formaction="prak2_kelompok_4_hasil_ferrari.html">
+                    </td>
+                    <td align="center" valign="top">
+                        <img src="assets/mclaren.webp" alt="McLaren 720S" width="200">
+                        <br>
+                        McLaren 720S
+                        <br>
+                        <input type="submit" value="Pesan McLaren" formaction="prak2_kelompok_4_hasil_mclaren.html">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <img src="assets/porsche.jpg" alt="Porsche 911 GT3 RS" width="200">
+                        <br>
+                        Porsche 911 GT3 RS
+                        <br>
+                        <input type="submit" value="Pesan Porsche" formaction="prak2_kelompok_4_hasil_porsche.html">
+                    </td>
+                    <td align="center" valign="top">
+                        <img src="assets/astonmartin.jpg" alt="Aston Martin Vantage" width="200">
+                        <br>
+                        Aston Martin Vantage
+                        <br>
+                        <input type="submit" value="Pesan Aston Martin" formaction="prak2_kelompok_4_hasil_astonmartin.html">
+                    </td>
+                    <td align="center" valign="top">
+                        <img src="assets/gtrr35.jpg" alt="Nissan GTR R35 Nismo" width="200">
+                        <br>
+                        Nissan GTR R35 Nismo
+                        <br>
+                        <input type="submit" value="Pesan Nissan GTR" formaction="prak2_kelompok_4_hasil_gtrr35.html">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+</body>
+</html>

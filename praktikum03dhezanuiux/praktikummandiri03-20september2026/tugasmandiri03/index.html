@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout web menggunakan frameset</title>
+</head>
+<frameset rows="100,*,50" frameborder="1" border="1" framespacing="0">
+    <!-- Header -->
+    <frame src="header.html" name="headerframe" scrolling="no">
+
+    <frameset cols="25%,75%">
+        <!-- Menu / Sidebar -->
+        <frame src="sidebar.html" name="menuframe">
+        <!-- Konten (target link menu) -->
+        <frame src="main.html" name="showframe">
+    </frameset>
+
+    <!-- Footer -->
+    <frame src="footer.html" name="footerframe" scrolling="no">
+</frameset>
+</html>

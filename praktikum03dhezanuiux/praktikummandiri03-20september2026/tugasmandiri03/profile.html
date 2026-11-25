@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Dhezan Shakti Al Hajj</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        body {
+            background-color: #e2e2e5;
+            padding: 15px;
+        }
+
+        .halaman {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #8699f8;
+            border: 2px solid #002fff;
+        }
+
+        header {
+            background-color: #3052fa;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+        }
+
+        nav {
+            background-color: #0073ff;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #fff;
+            margin-right: 18px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        .atas {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            align-items: flex-start;
+        }
+        .atas img.foto { width: 200px; height: 200px; object-fit: cover; object-position: center 20%; border: 2px solid #37474f; }
+        .biodata { flex: 1; }
+        .biodata h1 { font-size: 30px; margin-bottom: 10px; color: #f6f9f7; }
+        .biodata table { border-collapse: collapse; font-size: 16px; color: #f6f9f7; }
+        .biodata td { padding: 3px 12px 3px 0; vertical-align: top; color : #f6f9f7; }
+        .biodata td:first-child { font-weight: bold;}
+
+        aside.kategori {
+            width: 150px;
+            text-align: right;
+            font-size: 14px;
+        }
+        aside.kategori h3 { text-decoration: underline; margin-bottom: 6px; color : #f6f9f7; }
+        aside.kategori li { list-style: none; margin-bottom: 4px; color :#f6f9f7}
+
+        article {
+            padding: 0 20px 20px;
+        }
+        article p { 
+            line-height: 1.6;
+            margin-bottom: 12px;
+            font-size: 16px;
+            text-align: justify;
+            color :#f6f9f7;
+        }
+
+        .atas img.foto {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #37474f;
+            margin-top: 10px;
+        }
+        .multimedia {
+            display: flex;
+            gap: 15px;
+            padding: 0 20px 20px;
+            align-items: flex-start;
+            border-top: 2px solid #000000;
+        }
+        .multimedia video {
+            width: 300px;
+            max-width: 100%;
+            background: #000;
+            border: 2px solid #000000;
+
+        }
+        fieldset.video {
+            border: 2px solid #000000;
+            padding: 8px 12px;
+            flex: 1;
+            font-size: 14px;
+        }
+        
+        .koleksi {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            border: 2px solid #000000;
+            padding: 8px;
+        }
+        .koleksi img { width: 110px; height: 85px; object-fit: cover; display: block; }
+        .koleksi img:nth-child(2) { transform: translateY(5px); }
+
+        fieldset.lampiran {
+            border: 2px solid #000000;
+            padding: 8px 12px;
+            flex: 1;
+            font-size: 14px;
+        }
+        fieldset.lampiran legend { font-weight: bold; padding: 0 4px; }
+        fieldset.lampiran li { margin-bottom: 6px; margin-left: 16px; }
+
+        footer {
+            background-color: #263238;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 720px) {
+            .atas, .multimedia { flex-direction: column; }
+            aside.kategori { width: auto; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+    <div class="halaman">
+        <header>Profile Page - Praktikum 3 Layout Halaman Web</header>
+
+        <nav>
+            <a href="index.html" target="_top">Beranda</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+
+        <!-- Bagian atas: foto diri, biodata, kategori -->
+        <div class="atas">
+            <img class="foto" src="images/4951.png" alt="Foto diri Dhezan">
+
+            <section class="biodata">
+                <h1>Dhezan Shakti Al Hajj</h1>
+                <table>
+                    <tr><td>Program Studi</td><td>: Teknik Informatika</td></tr>
+                    <tr><td>Kampus</td><td>: STT Terpadu Nurul Fikri</td></tr>
+                    <tr><td>Rombel</td><td>: 9</td></tr>
+                    <tr><td>NIM</td><td>: 0110226114</td></tr>
+                    <tr><td>Tempat, Tgl Lahir</td><td>: Jakarta, 13 Desember 2007</td></tr>
+                    <tr><td>Alamat</td><td>: Jl.H.Icang Rt 09/01</td></tr>
+                    <tr><td>Email</td><td>: <a href="mailto:zerefaldhezan@gmail.com">zerefaldhezan@gmail.com</a></td></tr>
+                    <tr><td>Telepon</td><td>: 085882468014</td></tr>
+                </table>
+            </section>
+
+            <aside class="kategori">
+                <h3>Kategori</h3>
+                <ul>
+                    <li>Mahasiswa</li>
+                    <li>Web</li>
+                    <li>UI/UX</li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Deskripsi diri (2 paragraf) -->
+        <article>
+            <p>Saya Dhezan Shakti Al Hajj, mahasiswa Teknik Informatika di STT Terpadu Nurul Fikri. Saya sedang belajar membangun halaman web, mulai dari struktur HTML, tampilan dengan CSS, hingga merancang antarmuka yang nyaman dipakai.</p>
+            <p>Lewat mata kuliah Desain UI/UX dan Pemrograman Web, saya terbiasa mengerjakan praktikum secara bertahap dan menyimpan hasilnya di GitLab maupun GitHub. Sebelumnya saya masuk informatika saya memiliki hobi dibidang editing atau menjadi editor video dengan menggunakan aplikasi di handphone android. Namun, ke depannya saya ingin terus memperdalam pengembangan web dan membuat proyek yang bermanfaat bagi orang lain. lalu saya juga memiliki hobi berolahraga contohnya seperti gym sambil membuat konten cinematic.</p>
+        </article>
+
+        <!-- Multimedia: video, koleksi foto, lampiran download -->
+        <div class="multimedia">
+            <fieldset class="video">
+                <legend>Video Portofolio</legend>
+                <video controls poster="images/images.png">
+                <source src="images/GYM-EDIT.mp4" type="video/mp4">
+                </video>
+            </fieldset>
+
+            <fieldset class="koleksi">
+                <legend>Koleksi Foto</legend>
+                <img src="images/foto 1.jpg" alt="Koleksi foto 1">
+                <img src="images/foto 4.jpg" alt="Koleksi foto 2">
+                <img src="images/foto 2.jpeg" alt="Koleksi foto 3">
+                <img src="images/foto 3.jpg" alt="Koleksi foto 4">
+            </fieldset>
+
+            <fieldset class="lampiran">
+                <legend>Attachments</legend>
+                <ul>
+                    <li><a href="files/CV_Dhezan_Shakti_Al_Hajj.pdf" download>Download CV (PDF)</a></li>
+                    <li><a href="images/vidio.mp4" download>Download Video Portofolio (PDF)</a></li>
+                </ul>
+            </fieldset>
+        </div>
+
+        <footer>&copy; 2026 Dhezan Shakti Al Hajj - Praktikum Desain UI/UX Pemrograman Web</footer>
+    </div>
+</body>
+</html>
